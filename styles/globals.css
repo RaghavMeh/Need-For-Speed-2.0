@@ -1,0 +1,95 @@
+:root {
+    --primary: #ff9d00;
+    --secondary: #1a1a1a;
+    --accent: #ff4500;
+    --text: #ffffff;
+    --bg: #0a0a0a;
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+    max-height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.sidebar {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 2rem);
+}
+
+.viewport {
+    background: #000;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+.nfs-button {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nfs-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 157, 0, 0.5);
+}
+
+.nfs-title {
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #fff, #888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card {
+    background: var(--glass);
+    padding: 1rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+}
+
+.glow-text {
+    text-shadow: 0 0 10px var(--primary);
+}
