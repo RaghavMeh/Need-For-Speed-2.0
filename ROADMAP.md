@@ -34,3 +34,11 @@ This project aims to fulfill the vision of an upgraded NFS:MW using the latest A
 - **Engine:** Three.js / React Three Fiber
 - **AI:** Google Gemini 3 Pro / 2.0 Flash
 - **Styling:** Vanilla CSS (Advanced Micro-interactions)
+
+---
+
+## Deployment Status
+- **Target:** Google Cloud Run (Serverless)
+- **Containerization:** Docker (Multi-stage build)
+- **CI/CD:** GitHub Actions (Planned)
+
